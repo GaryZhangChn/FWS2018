@@ -3,17 +3,98 @@
     <head>
         <meta charset="utf-8" />
         <title>Gary's Porfolio</title>
+		<script type="text/javascript">
+			function addParagraphText1()
+				{
+					document.getElementById("para1").innerHTML="DJI Mavic Air: f2.8 1/13s iso100";
+				}
+			function delParagraphText1()
+				{
+					document.getElementById("para1").innerHTML="";
+				}
+			function addParagraphText2()
+				{
+					document.getElementById("para2").innerHTML="Canon 600D + Canon 11-18mm + ND1000: f8 60s iso100";
+				}
+			function delParagraphText2()
+				{
+					document.getElementById("para2").innerHTML="";
+				}
+			function addParagraphText3()
+				{
+					document.getElementById("para3").innerHTML="Canon 7D + Canon 24-105mm: f4 1/4s iso100";
+				}
+			function delParagraphText3()
+				{
+					document.getElementById("para3").innerHTML="";
+				}
+			function display_rate()
+				{
+					var rate_value = document.getElementById("val_rate").value;
+					if (rate_value > 0 && rate_value <= 5)
+						{
+							document.getElementById("para_rate").innerHTML = "Seems you don't like this page, any advices you can provide?";
+						}
+					else if (rate_value <= 10 && rate_value > 5)
+						{
+							document.getElementById("para_rate").innerHTML = "You look satisfied with this page, thank you!";
+						}
+					else 
+						{
+							document.getElementById("para_rate").innerHTML = "invalid input, please reselect a number!";
+						}
+				}
+				
+		</script>
     </head>
     <body style="background-color: darkgray">
         <center>
-            <H1 style="color:slategray"> welcome to my portfolio!</H1>
+            <H1 style="color:slategray"> Landscape: Mont-Tremblant</H1>
             <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif" "font-size:150%">These are drone pictures I have taken during last weekend in <a href="https://www.tremblant.ca">"Mont-Tremblant national park"</a> <i>(click to see more info)</i> </>
             <br />
             <br />
             <img src="source/Enlight270.JPG" height="600" width="800" />
-            <img src="source/Enlight269.jpg" height="600" width="800" />
+            <img src="source/Enlight269.jpg" height="600" width="800" /><br />		
             <img src="source/Enlight272.jpg" height="600" width="800" />
             <img src="source/Enlight271.jpg" height="600" width="800" />
+			<p>Camera info</p>
+			<!--JS display-->
+			<button onclick="addParagraphText1();">show</button>
+			<button onclick="delParagraphText1();">hide</button>
+			<p id="para1"> </p>	
+			<hr>
+			<!--section 1 fini-->
+			<H1 style="color:slategray"> Cityscape: Montreal&Hongkong</H1>
+			<p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif" "font-size:150%"> Winter at  <a href="https://goo.gl/maps/uinRgR3oA5H2">"Jean-Drapeau"</a> and Summer At <a href="https://goo.gl/maps/kdAXKN9R7dN2">"Victoria Peak"</a> <i>(click to see the location)</i> </>
+            <br />
+			<br />
+			<img src="source/IMG_1322-2.jpg" height="600" width="800" />
+            <img src="source/IMG_0198.jpg" height="600" width="800" /><br />		
+			<p>Camera info</p>
+			<!--JS display-->
+			<button onclick="addParagraphText2();">show</button>
+			<button onclick="delParagraphText2();">hide</button>
+			<p id="para2"> </p>	
+			<!--section 2 fini-->
+			<hr>
+			<H1 style="color:slategray"> Selfie: Working on midterm</H1>
+			<p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif" "font-size:150%"> Studing for midterm last night <i>(2018.10.17) </i> </p>
+            <br />
+			<img src="source/IMG_6787.jpg" height="600" width="800" />
+            <img src="source/IMG_6784.jpg" height="600" width="800" /><br />		
+			<p>Camera info</p>
+			<!--JS display-->
+			<button onclick="addParagraphText3();">show</button>
+			<button onclick="delParagraphText3();">hide</button>
+			<p id="para3"> </p>
+			<!--section 3 fini-->
+			<hr>
+			<!--JS rating-->
+			<p>how much you would rate this page on 10?</p>
+			<br />
+			<input id="val_rate" type="number">
+			<button onclick="display_rate();">submit your rate</button>
+			<p id="para_rate" style="color:blue;"></p>
         </center>
 
     </body>
