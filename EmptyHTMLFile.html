@@ -28,7 +28,7 @@
 				{
 					document.getElementById("para3").innerHTML="";
 				}
-			function display_rate()
+			function display_rate()	//rating feature
 				{
 					var rate_value = document.getElementById("val_rate").value;
 					if (rate_value > 0 && rate_value <= 5)
@@ -47,55 +47,117 @@
 				
 		</script>
     </head>
-    <body style="background-color: darkgray">
+		<meta name="viewport" content="initial-scale=1.0">
+		<meta charset="utf-8">
+		<style>
+		.section{
+			background: darkgray;
+		}
+		
+		#map {
+			height: 100%;
+		  }
+		  /* Optional: Makes the sample page fill the window. */
+		  html, body {
+			height: 100%;
+			margin: 0;
+			padding: 0;
+		  }
+		</style>
+    <body style="background-color: gray">
         <center>
-            <H1 style="color:slategray"> Landscape: Mont-Tremblant</H1>
-            <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif" "font-size:150%">These are drone pictures I have taken during last weekend in <a href="https://www.tremblant.ca">"Mont-Tremblant national park"</a> <i>(click to see more info)</i> </>
-            <br />
-            <br />
-            <img src="source/Enlight270.JPG" height="600" width="800" />
-            <img src="source/Enlight269.jpg" height="600" width="800" /><br />		
-            <img src="source/Enlight272.jpg" height="600" width="800" />
-            <img src="source/Enlight271.jpg" height="600" width="800" />
-			<p>Camera info</p>
-			<!--JS display-->
-			<button onclick="addParagraphText1();">show</button>
-			<button onclick="delParagraphText1();">hide</button>
-			<p id="para1"> </p>	
-			<hr>
-			<!--section 1 fini-->
-			<H1 style="color:slategray"> Cityscape: Montreal&Hongkong</H1>
-			<p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif" "font-size:150%"> Winter at  <a href="https://goo.gl/maps/uinRgR3oA5H2">"Jean-Drapeau"</a> and Summer At <a href="https://goo.gl/maps/kdAXKN9R7dN2">"Victoria Peak"</a> <i>(click to see the location)</i> </>
-            <br />
-			<br />
-			<img src="source/IMG_1322-2.jpg" height="600" width="800" />
-            <img src="source/IMG_0198.jpg" height="600" width="800" /><br />		
-			<p>Camera info</p>
-			<!--JS display-->
-			<button onclick="addParagraphText2();">show</button>
-			<button onclick="delParagraphText2();">hide</button>
-			<p id="para2"> </p>	
-			<!--section 2 fini-->
-			<hr>
-			<H1 style="color:slategray"> Selfie: Working on midterm</H1>
-			<p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif" "font-size:150%"> Studing for midterm last night <i>(2018.10.17) </i> </p>
-            <br />
-			<img src="source/IMG_6787.jpg" height="600" width="800" />
-            <img src="source/IMG_6784.jpg" height="600" width="800" /><br />		
-			<p>Camera info</p>
-			<!--JS display-->
-			<button onclick="addParagraphText3();">show</button>
-			<button onclick="delParagraphText3();">hide</button>
-			<p id="para3"> </p>
-			<!--section 3 fini-->
-			<hr>
-			<!--JS rating-->
-			<p>how much you would rate this page on 10?</p>
-			<br />
-			<input id="val_rate" type="number">
-			<button onclick="display_rate();">submit your rate</button>
-			<p id="para_rate" style="color:blue;"></p>
-        </center>
+			<div class="section">	<!--section 1-->
+				<H1 style="color:slategray"> Landscape: Mont-Tremblant</H1>
+				<p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif" "font-size:150%">These are drone pictures I have taken during last weekend in <a href="https://www.tremblant.ca">"Mont-Tremblant national park"</a> <i>(click to see more info)</i> </p>
+				<br />
+				<br />
+				<img src="source/Enlight270.JPG" height="600" width="800" />
+				<img src="source/Enlight269.jpg" height="600" width="800" /><br />		
+				<img src="source/Enlight272.jpg" height="600" width="800" />
+				<img src="source/Enlight271.jpg" height="600" width="800" />
+				<p>Camera info</p>
+				<!--JS display-->
+				<button onclick="addParagraphText1();">show</button>
+				<button onclick="delParagraphText1();">hide</button>
+				<p id="para1"> </p>	
+			</div>	
+			<div class="section">	<!--section 2-->
+				<H1 style="color:slategray"> Cityscape: Montreal&Hongkong </h1>
+				<p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif" "font-size:150%"> Winter at  <a href="https://goo.gl/maps/uinRgR3oA5H2">"Jean-Drapeau"</a> and Summer At <a href="https://goo.gl/maps/kdAXKN9R7dN2">"Victoria Peak"</a> <i>(click to see the location)</i> </p>		
+				<br />
+				<br />
+				<img src="source/IMG_1322-2.jpg" height="600" width="800" />
+				<img src="source/IMG_0198.jpg" height="600" width="800" /><br />		
+				<p>Camera info</p>
+				<!--JS display-->
+				<button onclick="addParagraphText2();">show</button>
+				<button onclick="delParagraphText2();">hide</button>
+				<p id="para2"> </p>	
+			</div>
+			<div class="section">	<!--section 3-->
+				<H1 style="color:slategray"> Selfie: Working on midterm</H1>
+				<p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif" "font-size:150%"> Studing for midterm last night <span style="font-weight:lighter">(2018.10.17) </span> </p>
+				<br />
+				<img src="source/IMG_6787.jpg" height="600" width="800" />
+				<img src="source/IMG_6784.jpg" height="600" width="800" /><br />		
+				<p>Camera info</p>
+				<!--JS display-->
+				<button onclick="addParagraphText3();">show</button>
+				<button onclick="delParagraphText3();">hide</button>
+				<p id="para3"> </p>
+			</div>
+				<hr>
+				<!--JS rating-->
+				<p>how much you would <span style="font-weight:bold">rate</span> this page on 10?</p>
+				<br />
+				<input id="val_rate" type="number">
+				<button onclick="display_rate();">submit your rate</button>
+				<p id="para_rate" style="color:blue;"></p>
+				
+			<!--below are using HTML geolocation feature-->
+		<p id="geo">Click the button to get your position.</p>
+		<button onclick="getLocation()">get my location</button>
+		<div id="mapholder"></div>
+			<script>
+			var x = document.getElementById("geo");
 
+			function getLocation() {
+				if (navigator.geolocation) {
+					navigator.geolocation.getCurrentPosition(showPosition, showError);
+				} else {
+					x.innerHTML = "Geolocation is not supported by this browser.";
+				}
+			}
+
+			function showPosition(position) {
+				var latlon = position.coords.latitude + "," + position.coords.longitude;
+				var img_url = "https://maps.googleapis.com/maps/api/staticmap?center="
+				+latlon+"&zoom=14&size=400x300&key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU";
+				document.getElementById("mapholder").innerHTML = "<img src='"+img_url+"'>";
+			}
+
+			function showError(error) {
+				switch(error.code) {
+					case error.PERMISSION_DENIED:
+						x.innerHTML = "User denied the request for Geolocation."
+						break;
+					case error.POSITION_UNAVAILABLE:
+						x.innerHTML = "Location information is unavailable."
+						break;
+					case error.TIMEOUT:
+						x.innerHTML = "The request to get user location timed out."
+						break;
+					case error.UNKNOWN_ERROR:
+						x.innerHTML = "An unknown error occurred."
+						break;
+				}
+			}
+			</script> 
+        </center>
+	
+  
+	
     </body>
 </html>
+
+
