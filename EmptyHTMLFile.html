@@ -1,7 +1,8 @@
 ﻿<!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="basic.css">
+		<meta name="viewport" content="initial-scale=1.0">
         <title>Gary's Porfolio</title>
 		<script type="text/javascript">
 			function addParagraphText1()
@@ -47,8 +48,7 @@
 				
 		</script>
     </head>
-		<meta name="viewport" content="initial-scale=1.0">
-		<meta charset="utf-8">
+
 		<style>
 		.section{
 			background: darkgray;
@@ -64,10 +64,10 @@
 			padding: 0;
 		  }
 		</style>
-    <body style="background-color: gray">
-        <center>
+    <body>
+
 			<div class="section">	<!--section 1-->
-				<H1 style="color:slategray"> Landscape: Mont-Tremblant</H1>
+				<H1> Landscape: Mont-Tremblant</H1>
 				<p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif" "font-size:150%">These are drone pictures I have taken during last weekend in <a href="https://www.tremblant.ca">"Mont-Tremblant national park"</a> <i>(click to see more info)</i> </p>
 				<br />
 				<br />
@@ -82,7 +82,7 @@
 				<p id="para1"> </p>	
 			</div>	
 			<div class="section">	<!--section 2-->
-				<H1 style="color:slategray"> Cityscape: Montreal&Hongkong </h1>
+				<H1> Cityscape: Montreal&Hongkong </h1>
 				<p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif" "font-size:150%"> Winter at  <a href="https://goo.gl/maps/uinRgR3oA5H2">"Jean-Drapeau"</a> and Summer At <a href="https://goo.gl/maps/kdAXKN9R7dN2">"Victoria Peak"</a> <i>(click to see the location)</i> </p>		
 				<br />
 				<br />
@@ -95,7 +95,7 @@
 				<p id="para2"> </p>	
 			</div>
 			<div class="section">	<!--section 3-->
-				<H1 style="color:slategray"> Selfie: Working on midterm</H1>
+				<H1> Selfie: Working on midterm</H1>
 				<p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif" "font-size:150%"> Studing for midterm last night <span style="font-weight:lighter">(2018.10.17) </span> </p>
 				<br />
 				<img src="source/IMG_6787.JPG" height="600" width="800" />
@@ -131,8 +131,7 @@
 
 			function showPosition(position) {
 				var latlon = position.coords.latitude + "," + position.coords.longitude;
-				var img_url = "https://maps.googleapis.com/maps/api/staticmap?center="
-				+latlon+"&zoom=14&size=400x300&key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU";
+				var img_url = "https://maps.googleapis.com/maps/api/staticmap?center="+latlon+"&zoom=14&size=400x300&key=AIzaSyBEYFoZexrufo9lxQwodlKZiE1rR8DmMbQ";
 				document.getElementById("mapholder").innerHTML = "<img src='"+img_url+"'>";
 			}
 
@@ -153,8 +152,6 @@
 				}
 			}
 			</script> 
-        </center>
-	
   
 	
     </body>

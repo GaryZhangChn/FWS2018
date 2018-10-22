@@ -1,0 +1,12 @@
+body{
+    background-color: gray;
+    text-align: center;
+}
+h1{
+    color: slategray;
+    margin-left: 20px;
+}
+.text{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:150%;
+}
