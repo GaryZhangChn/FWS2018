@@ -5,49 +5,8 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <title>Gary's Porfolio</title>
-		<script type="text/javascript">
-			function addParagraphText1()
-				{
-					document.getElementById("para1").innerHTML="DJI Mavic Air: f2.8 1/13s iso100";
-				}
-			function delParagraphText1()
-				{
-					document.getElementById("para1").innerHTML="";
-				}
-			function addParagraphText2()
-				{
-					document.getElementById("para2").innerHTML="Canon 600D + Canon 11-18mm + ND1000: f8 60s iso100";
-				}
-			function delParagraphText2()
-				{
-					document.getElementById("para2").innerHTML="";
-				}
-			function addParagraphText3()
-				{
-					document.getElementById("para3").innerHTML="Canon 7D + Canon 24-105mm: f4 1/4s iso100";
-				}
-			function delParagraphText3()
-				{
-					document.getElementById("para3").innerHTML="";
-				}
-			function display_rate()	//rating feature
-				{
-					var rate_value = document.getElementById("val_rate").value;
-					if (rate_value > 0 && rate_value <= 5)
-						{
-							document.getElementById("para_rate").innerHTML = "Seems you don't like this page, any advices you can provide?";
-						}
-					else if (rate_value <= 10 && rate_value > 5)
-						{
-							document.getElementById("para_rate").innerHTML = "You look satisfied with this page, thank you!";
-						}
-					else 
-						{
-							document.getElementById("para_rate").innerHTML = "invalid input, please reselect a number!";
-						}
-				}
-				
-		</script>
+		
+		<script type="text/javascript" src="jscode.js"></script>
     </head>
 
 		<style>
@@ -55,18 +14,16 @@
 			background: darkgray;
 		}
 		
-		#map {
-			height: 100%;
-		  }
-		  /* Optional: Makes the sample page fill the window. */
-		  html, body {
-			height: 100%;
-			margin: 0;
-			padding: 0;
-		  }
+		
 		</style>
     <body>
-
+		<ul class="menu">
+			 <li><a href="EmptyHTMLFile.html">Home</a></li> 
+			 <li><a href="gallery.html">Gallery</a></li> 
+			 <li><a href="comment.html">Comment</a></li> 
+			<li><a href="https://garyzhangchn.github.io/about/">About</a></li> 
+		</ul>
+			
 			<div class="section">	<!--section 1-->
 				<H1> Landscape: Mont-Tremblant</H1>
 				<p class="text">These are drone pictures I have taken during last weekend in <a href="https://www.tremblant.ca">"Mont-Tremblant national park"</a> <i>(click to see more info)</i> </p>
@@ -99,8 +56,8 @@
 				<H1> Selfie: Working on midterm</H1>
 				<p class="text"> Studing for midterm last night <span style="font-weight:lighter">(2018.10.17) </span> </p>
 				<br />
-				<img src="source/IMG_6787.JPG" class="image" />
-				<img src="source/IMG_6784.JPG" class="image" /><br />		
+				<img src="source/IMG_6787.JPG" class="imgstatic" />
+				<img src="source/IMG_6784.JPG" class="imgstatic" /><br />		
 				<p>Camera info</p>
 				<!--JS display-->
 				<button onclick="addParagraphText3();">show</button>
