@@ -30,6 +30,28 @@
 			 <li><a href="gallery.html">Gallery</a></li> 
 			 <li><a href="gallery.html">Comment</a></li> 
 			<li><a href="https://garyzhangchn.github.io/about/">About</a></li> 
-        </ul>
-        
+    </ul>
+				
+		<form>
+				<p>How do you want to reach me? (please select one method below)</p>
+				<div>
+					<input type="radio" id="contactChoice1" onclick="show_email_form()"
+					 name="contact" value="email">
+					<label for="contactChoice1">Email</label>
+			
+					<input type="radio" id="contactChoice2" onclick="show_phone_form()"
+					 name="contact" value="phone">
+					<label for="contactChoice2">Phone</label>
+			
+					<input type="radio" id="contactChoice3" onclick="show_mail_form()"
+					 name="contact" value="mail">
+					<label for="contactChoice3">Mail</label>
+				</div>
+<!---				<div>
+					<button type="submit">Submit</button>
+				</div> -->
+			</form>
+		<div id=comment_email>
+
+			</div>
     </body>

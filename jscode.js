@@ -117,3 +117,19 @@ function addParagraphText1()
 	dots[slideIndex-1].className += " active";
 	captionText.innerHTML = dots[slideIndex-1].alt;
   }	
+//below scripts are for comment.html
+	function show_email_form()
+	{
+		var info="Name:<br><input type='text' name='name'><br>Email:<br><textarea rows='1' cols='50'></textarea><br><input type='submit'value='comment'>";
+		document.getElementById("comment_email").innerHTML=info;
+	}
+	function show_phone_form()
+	{
+		var info="Name:<br><input type='text' name='name'><br>Phone number:<br><textarea rows='1' cols='50'></textarea><br><input type='submit'value='comment'>";
+		document.getElementById("comment_email").innerHTML=info;
+	}
+	function show_mail_form()
+	{
+		var info="Name:<br><input type='text' name='name'><br>Mail address:<br><textarea rows='1' cols='50'></textarea><br><input type='submit'value='comment'>";
+		document.getElementById("comment_email").innerHTML=info;
+	}
